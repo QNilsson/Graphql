@@ -1,0 +1,154 @@
+[{
+		"id": 1,
+		"title": "Sweet Potato and Black Bean Mexican Salad",
+		"readyInMinutes": 50,
+		"servings": 4,
+		"sourceUrl": "http://www.twopeasandtheirpod.com/sweet-potato-and-black-bean-mexican-salad/",
+		"openLicense": 0,
+		"image": "https://spoonacular.com/recipeImages/Sweet-Potato-and-Black-Bean-Mexican-Salad-547899.jpg"
+	},
+	{
+		"id": 2,
+		"title": "Kale Blueberry Orange Bliss Smoothie",
+		"readyInMinutes": 5,
+		"servings": 4,
+		"sourceUrl": "http://www.godairyfree.org/recipes/blueberry-orange-bliss-kale-smoothie",
+		"openLicense": 0,
+		"image": "http://www.godairyfree.org/recipes/Kale-Blueberry-Orange-Bliss-Smoothie-250042.jpg"
+	},
+	{
+		"id": 3,
+		"title": "Spicy Black Bean Chicken Enchiladas with Pumpkin Sour Cream Sauce",
+		"readyInMinutes": 50,
+		"servings": 8,
+		"sourceUrl": "http://www.ambitiouskitchen.com/2012/10/spicy-black-bean-chicken-enchiladas-with-pumpkin-sour-cream-sauce/",
+		"openLicense": 0,
+		"image": "https://spoonacular.com/recipeImages/spicy-black-bean-chicken-enchiladas-with-pumpkin-sour-cream-sauce-809792.jpg"
+	},
+	{
+		"id": 4,
+		"title": "Cilantro Salsa",
+		"readyInMinutes": 20,
+		"servings": 2,
+		"sourceUrl": "http://www.thegraciouspantry.com/clean-eating-cilantro-salsa/",
+		"openLicense": 0,
+		"image": "https://spoonacular.com/recipeImages/Cilantro-Salsa-667917.jpg"
+	},
+	{
+		"id": 5,
+		"title": "Restaurant Style Salsa",
+		"readyInMinutes": 10,
+		"servings": 8,
+		"sourceUrl": "http://www.rachelcooks.com/2016/02/01/restaurant-style-salsa-best/",
+		"openLicense": 0,
+		"image": "https://spoonacular.com/recipeImages/restaurant-style-salsa-713231.jpg"
+	},
+	{
+		"id": 6,
+		"title": "Ginger Sirloin with Strawberry Salsa",
+		"readyInMinutes": 25,
+		"servings": 1,
+		"sourceUrl": "http://civilizedcavemancooking.com/entrees/beef/ginger-sirloin-with-strawberry-salsa/",
+		"openLicense": 0,
+		"image": "https://spoonacular.com/recipeImages/Ginger-Sirloin-with-Strawberry-Salsa-472600.jpg"
+	},
+	{
+		"id": 7,
+		"title": "Three-Pepper “Burger” Fajitas",
+		"readyInMinutes": 45,
+		"servings": 4,
+		"sourceUrl": "http://www.vegetariantimes.com/recipe/three-pepper-burger-fajitas/",
+		"openLicense": 0,
+		"image": "https://spoonacular.com/recipeImages/three-pepper-burger-fajitas-760147.jpg"
+	},
+	{
+		"id": 8,
+		"title": "Roasted Poblano and Pecan Guacamole",
+		"readyInMinutes": 20,
+		"servings": 5,
+		"sourceUrl": "http://www.tastingtable.com/entry_detail/chefs_recipes/18941/How_to_Make_Guacamole_with_Roasted_Poblano_and_Pecan_from_H.html",
+		"openLicense": 0,
+		"image": "https://spoonacular.com/recipeImages/Roasted-Poblano-and-Pecan-Guacamole-666774.jpg"
+	},
+	{
+		"id": 9,
+		"title": "Roasted vegetable & feta tostada",
+		"readyInMinutes": 30,
+		"servings": 2,
+		"sourceUrl": "https://www.bbcgoodfood.com/recipes/1658642/roasted-vegetable-and-feta-tostada",
+		"openLicense": 0,
+		"image": "https://spoonacular.com/recipeImages/Roasted-vegetable---feta-tostada-222482.jpg"
+	},
+	{
+		"id": 10,
+		"title": "blackened salmon tacos with cilantro yogurt sauce",
+		"readyInMinutes": 45,
+		"servings": 2,
+		"sourceUrl": "http://www.greensnchocolate.com/2013/07/blackened-salmon-tacos-with-cilantro-yogurt-sauce.html",
+		"openLicense": 0,
+		"image": "https://spoonacular.com/recipeImages/blackened-salmon-tacos-with-cilantro-yogurt-sauce-551484.jpg"
+	},
+	{
+		"id": 11,
+		"title": "Breakfast Burrito Recipe",
+		"readyInMinutes": 35,
+		"servings": 6,
+		"sourceUrl": "https://www.iheartnaptime.net/easy-breakfast-burritos/",
+		"openLicense": 0,
+		"image": "https://spoonacular.com/recipeImages/Easy-Breakfast-Burritos-561654.jpg"
+	},
+	{
+		"id": 12,
+		"title": "Freezer Breakfast Burritos with Sausage, Eggs and Salsa Verde",
+		"readyInMinutes": 45,
+		"servings": 8,
+		"sourceUrl": "https://www.simplyrecipes.com/recipes/freezer_breakfast_burritos_with_sausage_eggs_and_salsa_verde/",
+		"openLicense": 0,
+		"image": "https://spoonacular.com/recipeImages/freezer-breakfast-burritos-with-sausage-eggs-and-salsa-verde-995684.jpg"
+	},
+	{
+		"id": 13,
+		"title": "Vegan Tofu Breakfast Burritos",
+		"readyInMinutes": 20,
+		"servings": 8,
+		"sourceUrl": "https://www.jocooks.com/recipes/vegan-tofu-breakfast-burritos/",
+		"openLicense": 0,
+		"image": "https://spoonacular.com/recipeImages/vegan-tofu-breakfast-burritos-774973.jpg"
+	},
+	{
+		"id": 14,
+		"title": "Chicken Burrito Skillet + Weekly Menu",
+		"readyInMinutes": 30,
+		"servings": 6,
+		"sourceUrl": "https://preventionrd.com/2019/07/chicken-burrito-skillet-weekly-menu/",
+		"openLicense": 0,
+		"image": "https://spoonacular.com/recipeImages/chicken-burrito-skillet-+-weekly-menu-1122228.jpg"
+	},
+	{
+		"id": 15,
+		"title": "Crock Pot Beef and Bean Burritos",
+		"readyInMinutes": 45,
+		"servings": 12,
+		"sourceUrl": "https://www.foodista.com/recipe/MHX443R4/crock-pot-beef-and-bean-burritos",
+		"openLicense": 2,
+		"image": "https://spoonacular.com/recipeImages/Crock-Pot-Beef-and-Bean-Burritos-640851.jpg"
+	},
+	{
+		"id": 16,
+		"title": "Clean Eating Lunch Box Burritos",
+		"readyInMinutes": 15,
+		"servings": 1,
+		"sourceUrl": "https://www.thegraciouspantry.com/clean-eating-lunch-box-burritos-recipe/",
+		"openLicense": 0,
+		"image": "https://spoonacular.com/recipeImages/clean-eating-lunch-box-burritos-1031764.jpg"
+	},
+	{
+		"id": 17,
+		"title": "Jalapeno Popper Chicken Burritos",
+		"readyInMinutes": 19,
+		"servings": 6,
+		"sourceUrl": "https://spicysouthernkitchen.com/jalapeno-popper-chicken-burritos/",
+		"openLicense": 0,
+		"image": "https://spoonacular.com/recipeImages/jalapeno-popper-chicken-burritos-1079575.jpg"
+	}
+]
