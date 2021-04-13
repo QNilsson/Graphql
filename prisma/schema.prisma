@@ -7,7 +7,7 @@ datasource db {
   url      = "file:./dev.db"
 }
 
-model recipe {
+model Recipe {
   id    Int    
   title String  @unique
   readyInMinutes  Int
@@ -16,7 +16,7 @@ model recipe {
   image String
 }
 
-model list{
+model List{
   id Int @id @default(autoincrement())
   uid String
   // recipeList Int[]

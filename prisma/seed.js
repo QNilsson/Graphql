@@ -2,7 +2,7 @@ const {PrismaClient} = require ('@prisma/client');
 
 const prisma = new PrismaClient ();
 
-const recipeData = require ('../seed/recipes.json');
+const recipeData = require ('./data/recipes.json');
 
 async function main () {
   console.log (`Start seeding ...`);
@@ -11,9 +11,9 @@ async function main () {
       let seededRecipes = {
         id: i.id,
         title: i.title,
-        time: i.readyInMinutes,
+        readyInMinutes: i.readyInMinutes,
         servings: i.servings,
-        source: i.sourceUrl,
+        sourceUrl: i.sourceUrl,
         image: i.image,
       };
 
