@@ -37,7 +37,7 @@ t.nonNull.list.nonNull.field('burritoRecipes', {
     return context.prisma.recipe.findMany({
       where: {
         title: {
-          endsWith: 'burritos',
+          contains: 'burrito',
         },
       },
     })
