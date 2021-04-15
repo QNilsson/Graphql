@@ -8,16 +8,16 @@ datasource db {
 }
 
 model Recipe {
-  id    Int    
-  title String  @unique
-  readyInMinutes  Int
-  servings Int
-  sourceUrl String?
-  image String
+  id             Int     @unique
+  title          String  @unique
+  readyInMinutes Int
+  servings       Int
+  sourceUrl      String?
+  image          String
 }
 
-model List{
-  id Int @id @default(autoincrement())
+model List {
+  id  Int    @id @default(autoincrement())
   uid String
   // recipeList Int[]
 }

@@ -9,11 +9,13 @@ scalar DateTime
 
 type Mutation {
   createRecipe(data: RecipeCreateInput!): Recipe
+  deleteRecipe(id: Int!): Recipe
 }
 
 type Query {
   allRecipes: [Recipe!]!
   recipeById(id: Int): Recipe
+  smallRecipes: [Recipe!]!
 }
 
 type Recipe {

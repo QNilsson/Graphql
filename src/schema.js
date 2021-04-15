@@ -37,6 +37,19 @@ const Query = objectType({
       },
     })
 
+    t.nonNull.list.nonNull.field('smallRecipes',{
+      type:'Recipe',
+      resolve: (_parent, _args, context) =>{
+        return context.prisma.recipe.findMany({
+          where:{
+            title:{
+              endsWith: 'burritos'
+            }
+          }
+        })
+      }
+    })
+
     // t.nonNull.list.nonNull.field('feed', {
     //   type: 'Post',
     //   args: {
@@ -192,17 +205,17 @@ const Mutation = objectType({
     //   },
     // })
 
-    // t.field('deletePost', {
-    //   type: 'Post',
-    //   args: {
-    //     id: nonNull(intArg()),
-    //   },
-    //   resolve: (_, args, context) => {
-    //     return context.prisma.post.delete({
-    //       where: { id: args.id },
-    //     })
-    //   },
-    // })
+    t.field('deleteRecipe', {
+      type: 'Recipe',
+      args: {
+        id: nonNull(intArg()),
+      },
+      resolve: (_, args, context) => {
+        return context.prisma.recipe.delete({
+          where: { id: args.id },
+        })
+      },
+    })
   },
 })
 
