@@ -113,48 +113,10 @@ const Mutation = objectType ({
       },
     });
 
-    // t.field('togglePublishPost', {
-    //   type: 'Post',
-    //   args: {
-    //     id: nonNull(intArg()),
-    //   },
-    //   resolve: async (_, args, context) => {
-    //     const post = await context.prisma.post.findUnique({
-    //       where: { id: args.id || undefined },
-    //       select: {
-    //         published: true,
-    //       },
-    //     })
+    
 
-    //     if (!post) {
-    //       throw new Error(
-    //         `Post with ID ${args.id} does not exist in the database.`,
-    //       )
-    //     }
 
-    //     return context.prisma.post.update({
-    //       where: { id: args.id || undefined },
-    //       data: { published: !post.published },
-    //     })
-    //   },
-    // })
-
-    // t.field('incrementPostViewCount', {
-    //   type: 'Post',
-    //   args: {
-    //     id: nonNull(intArg()),
-    //   },
-    //   resolve: (_, args, context) => {
-    //     return context.prisma.post.update({
-    //       where: { id: args.id || undefined },
-    //       data: {
-    //         viewCount: {
-    //           increment: 1,
-    //         },
-    //       },
-    //     })
-    //   },
-    // })
+   
 
     t.field ('deleteRecipe', {
       type: 'Recipe',
@@ -170,24 +132,6 @@ const Mutation = objectType ({
   },
 });
 
-// const User = objectType({
-//   name: 'User',
-//   definition(t) {
-//     t.nonNull.int('id')
-//     t.string('name')
-//     t.nonNull.string('email')
-//     t.nonNull.list.nonNull.field('posts', {
-//       type: 'Post',
-//       resolve: (parent, _, context) => {
-//         return context.prisma.user
-//           .findUnique({
-//             where: { id: parent.id || undefined },
-//           })
-//           .posts()
-//       },
-//     })
-//   },
-// })
 
 const Recipe = objectType ({
   name: 'Recipe',
@@ -203,25 +147,7 @@ const Recipe = objectType ({
   },
 });
 
-// const SortOrder = enumType({
-//   name: 'SortOrder',
-//   members: ['asc', 'desc'],
-// })
 
-// const PostOrderByUpdatedAtInput = inputObjectType({
-//   name: 'PostOrderByUpdatedAtInput',
-//   definition(t) {
-//     t.nonNull.field('updatedAt', { type: 'SortOrder' })
-//   },
-// })
-
-// const UserUniqueInput = inputObjectType({
-//   name: 'UserUniqueInput',
-//   definition(t) {
-//     t.int('id')
-//     t.string('email')
-//   },
-// })
 
 const RecipeCreateInput = inputObjectType ({
   name: 'RecipeCreateInput',
@@ -235,14 +161,9 @@ const RecipeCreateInput = inputObjectType ({
   },
 });
 
-// const UserCreateInput = inputObjectType({
-//   name: 'UserCreateInput',
-//   definition(t) {
-//     t.nonNull.string('email')
-//     t.string('name')
-//     t.list.nonNull.field('posts', { type: 'PostCreateInput' })
-//   },
-// })
+
+
+
 
 const schema = makeSchema ({
   types: [
@@ -250,7 +171,7 @@ const schema = makeSchema ({
     Mutation,
     Recipe,
     RecipeCreateInput,
-
+  
     // UserUniqueInput,
     // UserCreateInput,
     // PostCreateInput,
