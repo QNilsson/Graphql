@@ -43,6 +43,16 @@ t.nonNull.list.nonNull.field('burritoRecipes', {
     })
   },
 })
+
+ //Query to sort into descending list of serving size
+    t.nonNull.list.nonNull.field ('byServings', {
+      type: 'Recipe',
+      resolve: (_parent, _args, context) => {
+        return context.prisma.recipe.findMany ({
+          orderBy: [{servings: 'desc'}],
+        });
+      },
+    });
 ```
 
 ### At least 2 Mutation resolvers allowing users to create, update, or upsert an item

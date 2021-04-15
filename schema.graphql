@@ -16,6 +16,7 @@ type Mutation {
 type Query {
   allRecipes: [Recipe!]!
   burritoRecipes: [Recipe!]!
+  byServings: [Recipe!]!
   recipeById(id: Int): Recipe
 }
 
