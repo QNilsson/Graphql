@@ -209,7 +209,7 @@ const Mutation = objectType({
     t.field('deleteRecipe', {
       type: 'Recipe',
       args: {
-        id: nonNull(intArg()),
+        id: intArg(),
       },
       resolve: (_, args, context) => {
         return context.prisma.recipe.delete({

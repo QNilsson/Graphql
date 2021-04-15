@@ -80,6 +80,22 @@ t.nullable.field('recipeById', {
 ```
 ### At least 1 Mutation resolvers allowing users to delete an item
 
+```javascript
+//Mutation to Delete
+ t.field('deleteRecipe', {
+      type: 'Recipe',
+      args: {
+        id: intArg(),
+      },
+      resolve: (_, args, context) => {
+        return context.prisma.recipe.delete({
+          where: { id: args.id },
+        })
+      },
+    })
+
+```
+
 ### your datastore will contain at least 25 items
 
 ### App deployable locally using Docker and have seed data entered into the datastore
