@@ -37,6 +37,7 @@ const Query = objectType({
       },
     })
 
+    //filter out burritos recipes query
     t.nonNull.list.nonNull.field('burritoRecipes',{
       type:'Recipe',
       resolve: (_parent, _args, context) =>{

@@ -32,6 +32,21 @@ t.nullable.field('recipeById', {
       },
     })
 
+
+     //filter out burritos recipes query
+    t.nonNull.list.nonNull.field('burritoRecipes',{
+      type:'Recipe',
+      resolve: (_parent, _args, context) =>{
+        return context.prisma.recipe.findMany({
+          where:{
+            title:{
+              endsWith: 'burritos'
+            }
+          }
+        })
+      }
+    })
+
 ```
 
 ### At least 2 Mutation resolvers allowing users to create, update, or upsert an item
