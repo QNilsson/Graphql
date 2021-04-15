@@ -6,7 +6,7 @@
 
 ### Docker-based PostgresSQL as data store
 
-### At least 3 Query resolvers allowing users to get data from your server
+### At least 3 Query resolvers allowing users to get data from your server :white_check_mark:
 
 ```javascript
 //AllRecipes Query
@@ -55,7 +55,7 @@ t.nonNull.list.nonNull.field('burritoRecipes', {
     });
 ```
 
-### At least 2 Mutation resolvers allowing users to create, update, or upsert an item
+### At least 2 Mutation resolvers allowing users to create, update, or upsert an item :white_check_mark:
 
 ```javascript
 //createRecipe mutation
@@ -109,7 +109,7 @@ t.field('updateRecipe', {
 })
 ```
 
-### At least 1 Mutation resolvers allowing users to delete an item
+### At least 1 Mutation resolvers allowing users to delete an item :white_check_mark:
 
 ```javascript
 //Mutation to Delete
@@ -126,7 +126,7 @@ t.field('deleteRecipe', {
 })
 ```
 
-### your datastore will contain at least 25 items
+### your datastore will contain at least 25 items :white_check_mark:
 
 ### App deployable locally using Docker and have seed data entered into the datastore
 
