@@ -163,6 +163,30 @@ const Mutation = objectType({
       },
     })
 
+    t.field('updateRecipe',{
+      type:'Recipe',
+      args:{
+        id:nonNull(intArg()),
+        data:nonNull(
+          arg({
+            type:'RecipeCreateInput',
+          })
+        ),
+      },
+      resolve:(_, args,context)=>{
+        return context.prisma.recipe.update({
+          where:{id:args.id || undefined},
+          data:{
+            title:args.data.title,
+            servings:args.data.servings,
+            readyInMinutes:args.data.readyInMinutes,
+            image:args.data.image,
+            sourceUrl:args.data.sourceUrl
+          }
+        })
+      }
+    })
+
     // t.field('togglePublishPost', {
     //   type: 'Post',
     //   args: {
@@ -282,7 +306,7 @@ const RecipeCreateInput = inputObjectType({
     t.nonNull.int('readyInMinutes')
     t.nonNull.string('image')
     t.string('sourceUrl')
-    t.nonNull.int('id')
+    t.int('id')
 
   },
 })

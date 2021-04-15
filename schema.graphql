@@ -10,6 +10,7 @@ scalar DateTime
 type Mutation {
   createRecipe(data: RecipeCreateInput!): Recipe
   deleteRecipe(id: Int): Recipe
+  updateRecipe(data: RecipeCreateInput!, id: Int!): Recipe
 }
 
 type Query {
@@ -30,7 +31,7 @@ type Recipe {
 }
 
 input RecipeCreateInput {
-  id: Int!
+  id: Int
   image: String!
   readyInMinutes: Int!
   servings: Int!
