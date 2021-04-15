@@ -37,7 +37,7 @@ const Query = objectType({
       },
     })
 
-    t.nonNull.list.nonNull.field('smallRecipes',{
+    t.nonNull.list.nonNull.field('burritoRecipes',{
       type:'Recipe',
       resolve: (_parent, _args, context) =>{
         return context.prisma.recipe.findMany({

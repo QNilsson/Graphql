@@ -14,8 +14,8 @@ type Mutation {
 
 type Query {
   allRecipes: [Recipe!]!
+  burritoRecipes: [Recipe!]!
   recipeById(id: Int): Recipe
-  smallRecipes: [Recipe!]!
 }
 
 type Recipe {
