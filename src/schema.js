@@ -44,7 +44,7 @@ const Query = objectType ({
         return context.prisma.recipe.findMany ({
           where: {
             title: {
-              contains: 'burrito',
+              contains: 'Burrito',
             },
           },
         });
