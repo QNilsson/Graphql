@@ -2,9 +2,9 @@
 
 ## Project Requirements
 
-### Prisma as data modeling tool
+### Prisma as data modeling tool :white_check_mark:
 
-### Docker-based PostgresSQL as data store
+### Docker-based PostgresSQL as data store :white_check_mark:
 
 ### At least 3 Query resolvers allowing users to get data from your server :white_check_mark:
 
