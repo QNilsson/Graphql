@@ -1,5 +1,13 @@
 ## GraphQL Server
 
+## Local Run Instructions:
+1. download repo
+2. 'npm run launch docker'
+3. 'npm run migrate'
+4. 'npm run seed'
+5. 'npm run dev'
+6. open https://serene-einstein-be8031.netlify.app/graphql to see client side
+
 ## Project Requirements
 
 ### Prisma as data modeling tool :white_check_mark:
