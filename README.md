@@ -13,6 +13,12 @@
 ### Prisma as data modeling tool :white_check_mark:
 
 ### Docker-based PostgresSQL as data store :white_check_mark:
+```javascript
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+```
 
 ### At least 3 Query resolvers allowing users to get data from your server :white_check_mark:
 
