@@ -171,12 +171,6 @@ const schema = makeSchema ({
     Mutation,
     Recipe,
     RecipeCreateInput,
-  
-    // UserUniqueInput,
-    // UserCreateInput,
-    // PostCreateInput,
-    // SortOrder,
-    // PostOrderByUpdatedAtInput,
     DateTime,
   ],
   outputs: {
