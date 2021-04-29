@@ -236,7 +236,7 @@ mutation deleteRecipe{
 
 ```
 
-# .3 updateRecipe {}
+# 3. updateRecipe {}
 ```javascript
 mutation updateRecipe{
   updateRecipe(id:4, data:{
