@@ -162,14 +162,38 @@ t.field('deleteRecipe', {
 ## My available queries:
 # 1. allRecipes {}
   * Example:
-  ```javascript
+```javascript
   query allRecipes{
   allRecipes{
     title
     id
   }
 }
-  ```
+```
+
+# 2. recipeById{}
+  * Example:
+```javascript
+query recipeById{
+  recipeById(id:6){
+    title
+    id
+  }
+}
+
+```
+
+# 3. burritoRecipes {}
+  * Example:
+```javascript
+query burritoRecipes{
+  burritoRecipes{
+    id
+    title
+  }
+}
+```
+
 
 
 
