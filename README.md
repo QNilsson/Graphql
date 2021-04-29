@@ -160,7 +160,7 @@ t.field('deleteRecipe', {
 })
 ```
 ## My available queries:
-1. # allRecipes {}
+# 1. allRecipes {}
   * Example:
   ```javascript
   query allRecipes{
