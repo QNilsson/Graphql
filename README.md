@@ -1,12 +1,17 @@
 ## GraphQL Server
 
+This project uses a graphql server you can run from this repo and it communicates with a client-based react
+component found at https://serene-einstein-be8031.netlify.app/graphql.
+
 ## Local Run Instructions:
 1. download repo
 2. 'npm run launch docker'
 3. 'npm run migrate'
 4. 'npm run seed'
 5. 'npm run dev'
-6. open https://serene-einstein-be8031.netlify.app/graphql to see client side
+6. (optional) navigate to localhost:4000 to access graphql playground
+7. open https://serene-einstein-be8031.netlify.app/graphql to see client side
+8. Navigate to 'Graphql' menu item on react page
 
 ## Project Requirements
 
@@ -19,9 +24,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 ```
-
 ### At least 3 Query resolvers allowing users to get data from your server :white_check_mark:
 
+#### This Project uses a recipe API to fetch recipe data that I have queried and mutated. 
+
+#### First query: simply lists all the recipes I have from the API
 ```javascript
 //AllRecipes Query
 t.nonNull.list.nonNull.field('allRecipes', {
@@ -30,7 +37,9 @@ t.nonNull.list.nonNull.field('allRecipes', {
     return context.prisma.recipe.findMany()
   },
 })
-
+```
+#### Second query: returns a recipe of a certain ID
+```javascript
 //getRecipeById Query
 t.nullable.field('recipeById', {
   type: 'Recipe',
@@ -43,6 +52,9 @@ t.nullable.field('recipeById', {
     })
   },
 })
+```
+#### Third query: returns only recipes that contain the word 'burrito' in them
+```javascript
 
 //filter out burritos recipes query
 t.nonNull.list.nonNull.field('burritoRecipes', {
@@ -57,6 +69,9 @@ t.nonNull.list.nonNull.field('burritoRecipes', {
     })
   },
 })
+```
+#### Fourth query: returns a list of recipes sorted in descending order by how many servings the recipe provides
+```javascript
 
  //Query to sort into descending list of serving size
     t.nonNull.list.nonNull.field ('byServings', {
@@ -71,6 +86,7 @@ t.nonNull.list.nonNull.field('burritoRecipes', {
 
 ### At least 2 Mutation resolvers allowing users to create, update, or upsert an item :white_check_mark:
 
+#### A mutation that allows users to create their own recipe. (Found with the '+' at the top of the react web page)
 ```javascript
 //createRecipe mutation
 
@@ -96,6 +112,9 @@ t.field('createRecipe', {
     })
   },
 })
+```
+#### A mutation that allows users to update any existing recipe. Click on the pencil icon on the recipe card, make your edits, and then refresh the page
+```javascript
 
 //Mutation to update recipe
 t.field('updateRecipe', {
@@ -124,6 +143,7 @@ t.field('updateRecipe', {
 ```
 
 ### At least 1 Mutation resolvers allowing users to delete an item :white_check_mark:
+#### Allows users to delete any existing recipe. Click the trash can icon on the recipe card, then hit refresh. 
 
 ```javascript
 //Mutation to Delete
@@ -142,8 +162,9 @@ t.field('deleteRecipe', {
 
 ### your datastore will contain at least 25 items :white_check_mark:
 
-### App deployable locally using Docker and have seed data entered into the datastore
+### App deployable locally using Docker and have seed data entered into the datastore :white_check_mark:
+app is containerized on docker
 
-### All source code properly uploaded to Github
+### All source code properly uploaded to Github :white_check_mark:
 
-## Descriptive ReadMe File including server install and run process
+## Descriptive ReadMe File including server install and run process :white_check_mark:
