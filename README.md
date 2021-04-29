@@ -159,6 +159,20 @@ t.field('deleteRecipe', {
   },
 })
 ```
+## My available queries:
+  * Example:
+  ```javascript
+  query allRecipes{
+  allRecipes{
+    title
+    id
+  }
+}
+  ```
+1. # allRecipes {}
+
+
+
 
 ### your datastore will contain at least 25 items :white_check_mark:
 
