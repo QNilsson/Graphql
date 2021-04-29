@@ -194,6 +194,64 @@ query burritoRecipes{
 }
 ```
 
+# 3. byServings {}
+  * Example:
+```javascript
+query byServings{
+  byServings{
+    title
+    servings
+  }
+}
+```
+## My available mutations:
+# 1. createRecipe {}
+  * Example:
+```javascript
+mutation createRecipe{
+  createRecipe(
+    data:{
+      title:"created recipe2",
+      servings:19,
+      readyInMinutes:30,
+      image:"created image",
+      sourceUrl:"created source",
+      id:109
+    }
+  ){
+    id
+    title
+  }
+}
+```
+# 2. deleteRecipe {}
+  *Example:
+```javascript
+mutation deleteRecipe{
+  deleteRecipe(id:51){
+    title
+    id
+  }
+}
+
+```
+
+# .3 updateRecipe {}
+```javascript
+mutation updateRecipe{
+  updateRecipe(id:4, data:{
+    title:"The BEST papusas",
+    servings:5,
+    readyInMinutes:20,
+    sourceUrl:"Drews Mom",
+    image:"image here"
+  }){
+    id
+  }
+}
+
+```
+
 
 
 
