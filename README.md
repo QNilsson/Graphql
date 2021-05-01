@@ -86,7 +86,7 @@ t.nonNull.list.nonNull.field('burritoRecipes', {
 
 ### At least 2 Mutation resolvers allowing users to create, update, or upsert an item :white_check_mark:
 
-#### A mutation that allows users to create their own recipe. (Found with the '+' at the top of the react web page)
+#### A mutation that allows users to create their own recipe. Click on the '+' at the top of the page, add your data, refresh the page. New recipe will be at the bottom
 ```javascript
 //createRecipe mutation
 
