@@ -66,13 +66,13 @@ const Query = objectType ({
 const Mutation = objectType ({
   name: 'Mutation',
   definition (t) {
-    t.field ('createRecipe', {
+    t.nonNull.field ('createRecipe', {
       type: 'Recipe',
       args: {
         data: nonNull (
           arg ({
             type: 'RecipeCreateInput',
-          })
+          }),
         ),
       },
       resolve: (_, args, context) => {
