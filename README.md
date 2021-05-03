@@ -89,7 +89,7 @@ t.nonNull.list.nonNull.field('burritoRecipes', {
 
 ### At least 2 Mutation resolvers allowing users to create, update, or upsert an item :white_check_mark:
 
-#### A mutation that allows users to create their own recipe. Click on the :heavy_plus_sign:at the top of the page, add your data, refresh the page. New recipe will be at the bottom
+#### A mutation that allows users to create their own recipe. Click on the :heavy_plus_sign:at the top of the page, add your data, new card will appear. New recipe will be at the bottom
 ```javascript
 //createRecipe mutation
 
@@ -116,7 +116,7 @@ t.field('createRecipe', {
   },
 })
 ```
-#### A mutation that allows users to update any existing recipe. Click on the :pencil2: icon on the recipe card, make your edits, and then refresh the page
+#### A mutation that allows users to update any existing recipe. Click on the :pencil2: icon on the recipe card, make your edits, edited recipe may have moved places.
 ```javascript
 
 //Mutation to update recipe
@@ -146,7 +146,7 @@ t.field('updateRecipe', {
 ```
 
 ### At least 1 Mutation resolvers allowing users to delete an item :white_check_mark:
-#### Allows users to delete any existing recipe. Click the trash can icon on the recipe card, then hit refresh. 
+#### Allows users to delete any existing recipe. Click the trash can icon on the recipe card, watch the card disappear. 
 
 ```javascript
 //Mutation to Delete
