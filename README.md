@@ -5,7 +5,7 @@ component found at https://serene-einstein-be8031.netlify.app/graphql.
 
 ## Local Run Instructions:
 1. download repo
-2. 'npm run launch docker'
+2. 'npm run launchDocker'
 3. 'npm run migrate'
 4. 'npm run seed'
 5. 'npm run dev'
