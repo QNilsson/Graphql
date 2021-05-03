@@ -39,6 +39,7 @@ t.nonNull.list.nonNull.field('allRecipes', {
 })
 ```
 #### Second query: returns a recipe of a certain ID
+##### Have not found a way to sucessfully implement to front-end yet
 ```javascript
 //getRecipeById Query
 t.nullable.field('recipeById', {
@@ -54,6 +55,7 @@ t.nullable.field('recipeById', {
 })
 ```
 #### Third query: returns only recipes that contain the word 'burrito' in them
+##### Have not found a way to sucessfully implement to front-end yet
 ```javascript
 
 //filter out burritos recipes query
@@ -71,6 +73,7 @@ t.nonNull.list.nonNull.field('burritoRecipes', {
 })
 ```
 #### Fourth query: returns a list of recipes sorted in descending order by how many servings the recipe provides
+##### Have not found a way to sucessfully implement to front-end yet
 ```javascript
 
  //Query to sort into descending list of serving size
